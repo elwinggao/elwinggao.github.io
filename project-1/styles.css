@@ -1,16 +1,38 @@
 h1 {
     color: papayawhip;
+    font-size: 100px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 60px;
+}
 
+h2 {
+
+    color: darkred;
+    font-size: 60px;
+    text-align: center;
 }
 
 h3 {
-
-    color: lightsalmon;
+    color: papayawhip;
+    font-size: 80px;
+    width: 1000px;
 }
 
 h4 {
 
     color: rgb(255, 197, 180);
+}
+
+h5 {
+    color: rgb(255, 156, 126);
+    text-align: center;
+    position: sticky;
+    bottom: 0px;
+}
+
+#back2 {
+    color: rgb(255, 156, 126);    
 }
 
 a {
@@ -19,7 +41,7 @@ a {
 }
 
 a:hover {
-    color: red;
+    color: rgb(226, 80, 55);
   }
 
 p {
@@ -32,25 +54,44 @@ p {
 body {
     background-color: salmon;
     padding-left: 50px;
+    padding-right: 50px;
+    height: 100%;
 
 }
 
-#home {
-    background-image: url("images1/family.jpg");
-    background-size: contain;
+.full-height {
+    height: 100%;
+}
+
+.home {
+    background: url("images1/family.jpg"), rgba(27, 27, 27, 0.3);
+    background-blend-mode: multiply;
+    background-size: cover;
+    text-align: center;
+    padding-right: 50px;
+    min-height: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 180px 0;
+}
+
+.title {
+    color: linen;
+    font-size: 18pt;
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    padding: 200px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 10px
+}
+
+#back {
+    padding: 10px 0;
     text-align: center;
 }
-
-.image-box {
-    /* Here's the trick */
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), var(--image-url) center center;
-  
-    /* Here's the same styles we applied to our content-div earlier */
-    color: white;
-    width: contain;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: none;
-  }
