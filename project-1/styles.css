@@ -1,0 +1,56 @@
+h1 {
+    color: papayawhip;
+
+}
+
+h3 {
+
+    color: lightsalmon;
+}
+
+h4 {
+
+    color: rgb(255, 197, 180);
+}
+
+a {
+    color: linen;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+  }
+
+p {
+    color: linen;
+    width: 90%;
+    font-size: 36pt;
+    padding-right: 50px;
+}
+
+body {
+    background-color: salmon;
+    padding-left: 50px;
+
+}
+
+#home {
+    background-image: url("images1/family.jpg");
+    background-size: contain;
+    text-align: center;
+}
+
+.image-box {
+    /* Here's the trick */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), var(--image-url) center center;
+  
+    /* Here's the same styles we applied to our content-div earlier */
+    color: white;
+    width: contain;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: none;
+  }

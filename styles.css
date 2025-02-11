@@ -1,0 +1,21 @@
+
+body {
+    background-image: url("images/bird.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+
+  }
+
+h1 {
+    color: steelblue;
+
+}
+
+p {
+    color: cornsilk;
+
+}
+
+ul {
+    color:cornsilk
+}
