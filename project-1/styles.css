@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "Paysage-Regular";
+    src: url(fonts/Paysage-Regular.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Apfel-Grotezk-Regular";
+    src: url(fonts/ApfelGrotezk-Regular.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 h1 {
     color: papayawhip;
     font-size: 100px;
@@ -11,6 +26,7 @@ h2 {
     color: darkred;
     font-size: 60px;
     text-align: center;
+    font-family: "EB Garamond";
 }
 
 h3 {
@@ -19,20 +35,22 @@ h3 {
     width: 1000px;
     padding-top: 450px;
     line-height: 72px;
+    font-family: "EB Garamond";
 }
 
 h4 {
-
     color: rgb(255, 197, 180);
+    font-size: 16pt;
+    font-weight: 550;
 }
 
 h5 {
-    color: rgb(252, 207, 193);
+    color: rgb(255, 156, 126);
     text-align: center;
 }
 
 #back2 {
-    color: rgb(255, 156, 126);    
+    color: rgba(255, 170, 159, 0.966);    
 }
 
 a {
@@ -56,6 +74,7 @@ body {
     padding-left: 50px;
     padding-right: 50px;
     height: 100%;
+    font-family: "EB Garamond";
 
 }
 
@@ -76,7 +95,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 180px 0;
+    padding: 160px 0;
 }
 
 .title {
@@ -88,11 +107,11 @@ body {
     padding: 200px 0;
     display: grid;
     grid-auto-flow: column;
-    grid-column-gap: 10px
+    grid-column-gap: 10px;
+    line-height: 18pt;
 }
 
 #back {
-    padding: 10px 0;
     text-align: center;
 }
 
@@ -100,12 +119,14 @@ body {
     font-style: italic;
     color: rgb(230, 78, 78);
     font-size: 24pt;
+    font-weight: 500;
 }
 .continue {
     float: right;
     font-style: italic;
     color: rgb(230, 78, 78);
     font-size: 24pt;
+    font-weight: 500;
 }
 
 #icon {
@@ -113,4 +134,11 @@ body {
     position: fixed;
     right: 10px;
     top: 10px;
+}
+
+#icon-center {
+    width: 50px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
