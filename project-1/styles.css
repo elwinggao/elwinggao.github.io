@@ -95,3 +95,22 @@ body {
     padding: 10px 0;
     text-align: center;
 }
+
+.previous {
+    font-style: italic;
+    color: rgb(230, 78, 78);
+    font-size: 24pt;
+}
+.continue {
+    float: right;
+    font-style: italic;
+    color: rgb(230, 78, 78);
+    font-size: 24pt;
+}
+
+#icon {
+    width: 50px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+}
