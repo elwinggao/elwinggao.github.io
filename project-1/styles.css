@@ -23,7 +23,7 @@ h1 {
 
 h2 {
 
-    color: darkred;
+    color: rgb(150, 26, 36);
     font-size: 60px;
     text-align: center;
     font-family: "EB Garamond";
@@ -96,6 +96,24 @@ body {
     justify-content: center;
     align-items: center;
     padding: 160px 0;
+}
+
+.mother {
+    background: url("images1/mama6.jpg"), rgb(236, 133, 122);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    text-align: center;
+    padding-right: 50px;
+    min-height: 100%;
+}
+
+.daughter {
+    background: url("images1/daughter.jpg"), rgb(236, 133, 122);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    text-align: center;
+    padding-right: 50px;
+    min-height: 100%;
 }
 
 .title {
