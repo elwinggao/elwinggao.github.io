@@ -107,6 +107,13 @@ body {
     min-height: 100%;
 }
 
+.mother2 {
+    background: lightsalmon;
+    text-align: center;
+    padding-right: 50px;
+    min-height: 100%;
+}
+
 .daughter {
     background: url("images1/daughter.jpg"), rgb(236, 133, 122);
     background-blend-mode: soft-light;
