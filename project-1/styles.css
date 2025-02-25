@@ -42,6 +42,7 @@ h4 {
     color: rgb(255, 197, 180);
     font-size: 16pt;
     font-weight: 550;
+    line-height: 0.9;
 }
 
 h5 {
@@ -56,10 +57,13 @@ h5 {
 a {
     color: linen;
     text-decoration: none;
+    transition: 3s;
+    animation-timing-function: cubic-bezier(0.2, 0, 0.58, 1);
 }
 
 a:hover {
     color: rgb(226, 80, 55);
+    transition: 0.75s;
   }
 
 p {
@@ -89,6 +93,7 @@ body {
     text-align: center;
     padding-right: 50px;
     min-height: 100%;
+    overflow-y: hidden;
 }
 
 .center {
@@ -126,9 +131,10 @@ body {
 .title {
     color: linen;
     font-size: 18pt;
+    letter-spacing: 1px;
     text-align: center;
     margin: auto;
-    width: 40%;
+    width: 45%;
     padding: 200px 0;
     display: grid;
     grid-auto-flow: column;
@@ -138,6 +144,18 @@ body {
 
 #back {
     text-align: center;
+    color: rgb(252, 136, 106);
+    letter-spacing: 1px;
+}
+
+#back:hover {
+    color: rgb(212, 67, 41);
+}
+
+.nav {
+    width: 90%;
+    height: 100px;
+    position: relative;
 }
 
 .previous {
@@ -147,7 +165,8 @@ body {
     font-weight: 500;
 }
 .continue {
-    float: right;
+    position: absolute;
+    right: 0px;
     font-style: italic;
     color: rgb(230, 78, 78);
     font-size: 24pt;
@@ -159,6 +178,11 @@ body {
     position: fixed;
     right: 10px;
     top: 10px;
+    transition: 1s;
+}
+
+#icon:hover{
+    transform: rotate(-30deg);
 }
 
 #icon-center {
@@ -166,4 +190,9 @@ body {
     position: fixed;
     bottom: 5%;
     left: 50%;
+    transition: 1s;
+}
+
+#icon-center:hover{
+    transform: rotate(-30deg);
 }
