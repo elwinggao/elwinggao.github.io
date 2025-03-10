@@ -1,0 +1,142 @@
+/* Version 2: Full Width and Typographic */
+
+body {
+/* I'm overriding the default margin and setting it to 0 */
+    margin: 0;
+}
+
+.container {
+/* I'm giving this a position:relative so I can position other content within it with position:absolute */
+    position: relative;
+
+/* This makes the container 100% of the viewport width */
+    width: 100vw;
+
+/* This makes the container 100% of the viewport height */
+    height: 100vh;
+    background-color: rgb(12, 142, 151);
+}
+
+/* Whenever you are trying to position a child element relative to its parent container, you must: */
+/* 1. Give the parent a position:relative (see line 10) */
+/* 2. Give the child a position:absolute (see line 29) */
+/* 3. The top, bottom, left, right properties will now be relative to the parent */
+
+
+h1 {
+/* I'm giving this a position:absolute so I can position it relative to the container (see line 10) */
+/* You would give every element within the container a position:absolute */
+/* Important: Make sure in your HTML that the content is nested between the container div tags */
+    position: absolute;
+ 
+/* This centers the content vertically and horiziontally within the container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 12pt;
+    font-family: "Roca";
+    font-style: italic;
+    font-weight: 200;
+    color:rgb(8, 66, 70);
+    position: absolute;
+    top: 35%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    transition: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+h2:hover {
+    animation: disappear 8s infinite;
+    opacity: 0%;
+
+    /* background: linear-gradient(90deg, rgb(12, 142, 151) 25%, rgb(0, 0, 0) 65%, rgb(12, 142, 151) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation:slidebg 7s linear infinite; */
+ }
+
+/* @keyframes slidebg {
+    to {
+      background-position:20vw;
+    }
+  } */
+
+h3 {
+    font-weight: 200;
+    margin-bottom: -10px;
+    font-size: 10pt;
+}
+
+p{
+    font-size: 10pt;
+}
+
+
+.title img{
+    position: absolute;
+    width: 250px;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+  }
+
+  img:hover {     
+    animation: disappear 3s ease-in-out infinite alternate none;
+    }
+
+    @keyframes disappear {
+        0% { opacity: 1; } 100% { opacity: 0;} 
+    }
+
+.info{
+    font-family: "Aesthet-Nova";
+    color:rgb(8, 66, 70);
+}
+
+.info div {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+  }
+
+#reception {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transition: 3s;
+}
+
+#reception:hover{
+    animation: disappear 3s ease-in-out infinite alternate none;
+}
+
+#hours {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+}
+
+#hours:hover {
+    animation: disappear 3s ease-in-out infinite alternate none;
+}
+
+#location {
+    position: absolute;
+    top: 65%;
+    left: 40%;
+}
+
+#location:hover {
+    animation: disappear 3s ease-in-out infinite alternate none;
+}
+
+.title3{
+    display: none;
+}
