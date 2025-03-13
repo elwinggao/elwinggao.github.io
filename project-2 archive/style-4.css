@@ -1,50 +1,32 @@
 /* Version 1: Poster Shape */
+body {
+    /* I'm overriding the default margin and setting it to 0 */
+        margin: 0;
+    }
 
 .container {
-    background: rgb(47, 70, 119);
+/* I'm giving this a position:relative so I can position other content within it with position:absolute */
     position: relative;
-    width: 500px;
-    
 
-  /* METHOD 1: CONTENT-BOX SIZING */
-  /* I want my height to be a total of 700px, but there's a 20px padding all around, so I'm giving it a height of 660px (700 - 20 - 20) */
-    height: 660px; 
-    padding: 20px;
+/* This makes the container 100% of the viewport width */
+    width: 100vw;
 
-  /* METHOD 2: BORDER-BOX SIZING */
-  /* Alternatively, you can use box-sizing:border-box and set the height to 700px */
-  /* The padding would be added inwards, and you won't need to do the math everytime */
-  /* The height will stay 700px no matter how much padding or border you add */
-  /* box-sizing: border-box; */
-  /* height: 700px; */
-  /* padding: 20px; */
-    
-  /* This makes it horizontally centered */
-  /* It only works on "display:block" elements */
-  /* If it's a position other than static or relative, you must set left and right properties to 0 */ 
-    margin: auto;
-    text-align: center;
-    
-  /* This makes it centered vertically */
-  /* It's 50% of the height, and subtracting half of the total height of the poster (which is 700px)*/  
-    margin-top: calc(50vh - 350px);
-
-  } 
+/* This makes the container 100% of the viewport height */
+    height: 100vh;
+    background-color: rgb(12, 142, 151);
+}
 
 
-  .title img{
+
+  /* .title img{
     position: absolute;
     width: 200px;
     right: 175px;
     top: 200px;
     display: none;
-  }
+  } */
 
-  .title2 {
-    display: none;
-  }
-
-  .title3 {
+  /* .title3 {
     position: absolute;
     width: 450px;
     text-align: left;
@@ -54,21 +36,59 @@
     display: block;
     margin-top: 50px;
     margin-bottom: 40px;
+  } */
+
+  .top {
+    position: absolute;
+    top: 5vh;
+    left: 6vw;
+    /* width: 10vw;
+    display: flex;
+    justify-content: flex-end; */
+  }
+
+  .breath {
+    position: absolute;
+    display: block;
+    top: 20vh;
+    left: 12vw;
+    font-family: "aesthet-nova";
+    color: white;
+
   }
 
   .info{
     position: absolute;
-    left: 10px;
-    bottom: 20px;
+    left: 5vw;
+    bottom: 0vh;
+    height: 25vh;
     text-align: right;
+    /* display: flex;
+    justify-content: flex-end; */
   }
 
-  .info div {
-    display: block;
-    width: 120px;
-    margin: 20px;
+  .dots {
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    border-radius: 100%;
+    /* display: inline-block; */
+    display:none;
+    left: 155px;
+    margin: 10px;
+    background-color: red;
   }
 
+  .dots div{
+    width: 7px;
+    height: 7px;
+    background-color: skyblue;
+    border-radius: 100%;
+    /* display: inline-block; */
+    display:none;
+    left: 155px;
+    margin: 10px;
+  }
 
   h1 {
     font-size: 25pt;
@@ -81,25 +101,25 @@
   }
 
   h2 {
-    font-size: 14pt;
-    margin-top: 0px;
-    font-family: "freight-micro-pro", serif;
+    font-size: 12pt;
+    font-family: "aesthet-nova", serif;
     font-weight: 300;
     font-style: italic;
-    margin-left: 50px;
-    margin-top: 10px;
     color:rgba(169, 216, 247, 0.74);
   }
 
   h3 {
     font-size: 10pt;
-    margin: -10px;
-    font-family: "freight-micro-pro", serif;
+    font-family: "aesthet-nova", serif;
     font-weight: 100;
     font-style: italic;
     line-height: 1.2;
     color:rgba(169, 216, 247, 0.74);
   }
+
+img {
+    height: 10vh;
+}
 
 .hu {
   letter-spacing: 80pt;
@@ -109,7 +129,7 @@
 .hu:hover {
   letter-spacing: 250pt;
   cursor: e-resize;
-  color:rgba(137, 171, 201, 0.295);
+  color:rgba(115, 144, 170, 0.295);
 }
 
 .hu2 {
@@ -120,7 +140,7 @@
 .hu2:hover {
   letter-spacing: 250pt;
   cursor: e-resize;
-  color: rgba(137, 171, 201, 0.295);
+  color: rgba(115, 144, 170, 0.295);
 }
 
 .xi {

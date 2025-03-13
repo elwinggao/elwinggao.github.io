@@ -1,0 +1,179 @@
+/* Hello friends and family if you are reading this you are probably here to be a butt and overanalyze my code well guess what everything that's in here I learned to do in the last two months so get outta here and just enjoy the website. */
+
+
+body {
+    /* I'm overriding the default margin and setting it to 0 */
+        margin: 0;
+    }
+
+.container {
+/* I'm giving this a position:relative so I can position other content within it with position:absolute */
+    position: relative;
+
+/* This makes the container 100% of the viewport width */
+    width: 100vw;
+
+/* This makes the container 100% of the viewport height */
+    height: 100vh;
+    background-color: rgb(12, 142, 151);
+}
+
+.sub {
+  display: flex;
+  flex-direction: column;
+  width: 12vw;
+  height: 90vh;
+  justify-content: space-between;
+  text-align: right;
+  padding-top: 5vh;
+}
+
+  .top {
+    height: fit-content;
+    width: 12vw;
+  }
+
+  .info{
+    text-align: right;
+  }
+
+  .breath {
+    position: absolute;
+    height: 63vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 12vh;
+    left: 12vw;
+    font-family: "roca";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 30pt;
+
+  }
+
+  .dots {
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    border-radius: 100%;
+    /* display: inline-block; */
+    display:none;
+    left: 155px;
+    margin: 10px;
+    background-color: red;
+  }
+
+  .dots div{
+    width: 7px;
+    height: 7px;
+    background-color: skyblue;
+    border-radius: 100%;
+    /* display: inline-block; */
+    display:none;
+    left: 155px;
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 25pt;
+    font-family: "swear-display-cilati", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: lowercase;
+    color:rgba(180, 206, 228, 0.726);
+    margin-left: 140px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 12pt;
+    font-family: "roca", serif;
+    letter-spacing: 1pt;
+    font-weight: 300;
+    color:rgba(160, 234, 240, 0.74);
+  }
+
+  h3 {
+    font-size: 10pt;
+    font-family: "aesthet-nova", serif;
+    font-weight: 100;
+    line-height: 1.2;
+    color: rgba(160, 234, 240, 0.74);
+    ;
+  }
+
+img {
+    height: 10vh;
+}
+
+.hu {
+  letter-spacing: 10vw;
+  transition: 6s ease-in-out;
+  opacity: 50%;
+}
+
+.hu:hover {
+  letter-spacing: 75vw;
+  cursor: e-resize;
+  opacity: 10%;
+}
+
+.hu2 {
+  letter-spacing: 20vw;
+  transition: 6s ease-in-out;
+  opacity: 50%;
+}
+
+.hu2:hover {
+  letter-spacing: 75vw;
+  cursor: e-resize;
+  opacity: 10%;
+}
+
+.xi {
+  letter-spacing: 60vw;
+  transition: 3.5s ease-in-out;
+  opacity: 50%;
+}
+
+.xi:hover {
+  letter-spacing: 5vw;
+  cursor: w-resize;
+  opacity: 100%;
+}
+
+.xi2 {
+  letter-spacing: 40vw;
+  transition: 3.5s ease-in-out;
+  opacity: 50%;
+}
+
+.xi2:hover {
+  letter-spacing: 0vw;
+  cursor: w-resize;
+  opacity: 100%;
+}
+
+.slash{
+  transition: 3s;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  width: 30vw;
+  margin-left: 1vw;
+  color: rgb(188, 234, 240);
+  opacity: 50%;
+}
+
+.slash:hover{
+  rotate: 359deg;
+  opacity: 100%
+}
+/* 
+.slash:hover .xi{
+  letter-spacing: 60pt;
+  animation-delay: 2s;
+} */

@@ -1,0 +1,180 @@
+/* Version 1: Poster Shape */
+
+.container {
+    background: rgb(47, 70, 119);
+    position: relative;
+    width: 500px;
+    
+
+  /* METHOD 1: CONTENT-BOX SIZING */
+  /* I want my height to be a total of 700px, but there's a 20px padding all around, so I'm giving it a height of 660px (700 - 20 - 20) */
+    height: 660px; 
+    padding: 20px;
+
+  /* METHOD 2: BORDER-BOX SIZING */
+  /* Alternatively, you can use box-sizing:border-box and set the height to 700px */
+  /* The padding would be added inwards, and you won't need to do the math everytime */
+  /* The height will stay 700px no matter how much padding or border you add */
+  /* box-sizing: border-box; */
+  /* height: 700px; */
+  /* padding: 20px; */
+    
+  /* This makes it horizontally centered */
+  /* It only works on "display:block" elements */
+  /* If it's a position other than static or relative, you must set left and right properties to 0 */ 
+    margin: auto;
+    text-align: center;
+    
+  /* This makes it centered vertically */
+  /* It's 50% of the height, and subtracting half of the total height of the poster (which is 700px)*/  
+    margin-top: calc(50vh - 350px);
+
+  } 
+
+
+  .title img{
+    position: absolute;
+    width: 200px;
+    right: 175px;
+    top: 200px;
+    display: none;
+  }
+
+  .title2 {
+    display: none;
+  }
+
+  .title3 {
+    position: absolute;
+    width: 450px;
+    text-align: left;
+  }
+
+  .title3 div{
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .info{
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    text-align: right;
+  }
+
+  .info div {
+    display: block;
+    width: 120px;
+    margin: 15px;
+  }
+
+  .dots {
+    width: 100px;
+    height: 100px;
+    background-color: skyblue;
+    border-radius: 100%;
+    display: inline-block;
+    left: 155px;
+    margin: 10px;
+    background-color: red;
+  }
+
+  .dots div{
+    width: 7px;
+    height: 7px;
+    background-color: skyblue;
+    border-radius: 100%;
+    display: inline-block;
+    left: 155px;
+    margin: 10px;
+  }
+
+
+  h1 {
+    font-size: 25pt;
+    font-family: "swear-display-cilati", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    text-transform: lowercase;
+    color:rgba(180, 206, 228, 0.726);
+    margin-left: 140px;
+  }
+
+  h2 {
+    font-size: 12pt;
+    margin-top: 0px;
+    font-family: "freight-micro-pro", serif;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 50px;
+    margin-top: 10px;
+    color:rgba(169, 216, 247, 0.74);
+  }
+
+  h3 {
+    font-size: 10pt;
+    margin: -10px;
+    font-family: "freight-micro-pro", serif;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 1.2;
+    color:rgba(169, 216, 247, 0.74);
+  }
+
+.hu {
+  letter-spacing: 80pt;
+  transition: 3.5s ease-in-out;
+}
+
+.hu:hover {
+  letter-spacing: 250pt;
+  cursor: e-resize;
+  color:rgba(115, 144, 170, 0.295);
+}
+
+.hu2 {
+  letter-spacing: 50pt;
+  transition: 3.5s ease-in-out;
+}
+
+.hu2:hover {
+  letter-spacing: 250pt;
+  cursor: e-resize;
+  color: rgba(115, 144, 170, 0.295);
+}
+
+.xi {
+  letter-spacing: 220pt;
+  transition: 2.5s ease-in-out;
+}
+
+.xi:hover {
+  letter-spacing: 30pt;
+  cursor: w-resize;
+  color:rgb(228, 243, 255);
+}
+
+.xi2 {
+  letter-spacing: 170pt;
+  transition: 2.5s ease-in-out;
+}
+
+.xi2:hover {
+  letter-spacing: 20pt;
+  cursor: w-resize;
+  color:rgb(228, 243, 255);
+}
+
+.slash{
+  transition: 3s;
+}
+
+.slash:hover{
+  rotate: 359deg;
+}
+/* 
+.slash:hover .xi{
+  letter-spacing: 60pt;
+  animation-delay: 2s;
+} */
