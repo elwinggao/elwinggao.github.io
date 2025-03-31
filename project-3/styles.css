@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    transition: 0.5s;
+    background: url('images/vignette.png'), rgb(255, 216, 229);
+    background-blend-mode: color-dodge;
+    background-size: cover;
+}
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#flowerShop {
+    position: absolute;
+    top: 10vh;
+    left: 0px;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#product {
+    height: 30vh;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+
+.off {
+    display: none;
+}
+.on {
+    display: initial;
+    height: 30vh;
+    font-size: 10pt;
+}
+
+#bouquet{
+    height: 40vh;
+}
+
+#text {
+    width: 160px;
+}
+/* #background {
+    height: 4vh;
+    margin: 1vh;
+} */
+
+/* .buttons {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+.seasons {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 78vw;
+    font-size: 9pt;
+}
+
+.custom-slider-range:hover {
+    opacity: 1.2;
+}
+
+.custom-slider-range {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 50%;
+    height: 25px;
+    background: linear-gradient(to right,
+    rgb(255 210 179), rgb(255 255 179), rgb(204 255 179), rgb(179 230 255));
+    outline: none;
+    opacity: 0.8;
+    transition: opacity 0.4s;
+    border-radius: 15px;
+    transform: rotate(180deg);
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+
+.custom-slider-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 60%;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+/* .spring {
+    background-image: radial-gradient(rgb(248, 196, 214), rgb(196, 236, 149));
+}
+
+.summer {
+    background-image: radial-gradient(rgb(241, 231, 135), rgb(43, 167, 238));
+}
+
+.fall {
+    background-image: radial-gradient(rgb(223, 104, 74), rgb(190, 169, 141));
+}
+
+.winter {
+    background-image: radial-gradient(rgb(88, 158, 185), rgb(201, 204, 224));
+} */

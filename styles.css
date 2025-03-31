@@ -7,6 +7,12 @@ body {
 
   }
 
+.container {
+    width: 100vw;
+    height:100vh;
+    position: relative;
+}
+
 h1 {
     color: steelblue;
     font-family: "Maiola";

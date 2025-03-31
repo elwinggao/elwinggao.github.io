@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Tool</title>
+</head>
+<body>
+    <!-- <input type="range" id="month" min="1" max="12" value="1" oninput="changeMonth()"> -->
+    <!-- <input type="button" id="background" value="Change Style" onclick="changeSeason()"> -->
+
+    <div class="container">
+        <!-- <input type="color" id="color-input" value="#FFFFFF" oninput="changeBackground()"> -->
+
+        
+            <div id="flowerShop"> 
+                <h1>welcome to the flower shop!</h1>
+                <!-- <div class=buttons>
+                    <input type="button" id="background" value="Spring" onclick="makeSpring()">
+                    <input type="button" id="background" value="Summer" onclick="makeSummer()">
+                    <input type="button" id="background" value="Fall" onclick="makeFall()">
+                    <input type="button" id="background" value="Winter" onclick="makeWinter()">
+                </div> -->
+                <!-- <input type="range" id="month" min="1" max="12" value="1" oninput="changeMonth()"> -->
+                
+                <input type="range" min="25" 
+                   max="200" 
+                   value="200" 
+                   class="custom-slider-range"
+                   id="myRange" 
+                   oninput="changeBackgroundColor()">
+
+                <div class="seasons"> 
+                    <div>winter</div>
+                    <div>spring</div>
+                    <div>summer</div>
+                    <div>fall</div>
+                </div>
+
+                <!-- <div id="samples"> hey there </div> -->
+                <br>
+                <input type="text" id="text" placeholder="Who are these flowers for?" oninput="changeText()">
+                <br>
+
+                <input type="button" id="make" value="Make" onclick="makeFlower()">
+
+                <div id="product" class="off">  
+                </div>
+                    
+                
+            </div>
+        
+
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
