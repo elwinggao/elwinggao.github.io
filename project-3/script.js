@@ -4,8 +4,10 @@ let sample = document.getElementById("samples");
 let product = document.getElementById("product");
 
 
-let season = ["spring", "summer", "fall", "winter"];
-let spring = []
+// let season = ["spring", "summer", "fall", "winter"];
+
+let slider = document.getElementById("myRange");
+    let value = slider.value;
 
 function changeBackgroundColor() {
     let slider = document.getElementById("myRange");
@@ -13,39 +15,159 @@ function changeBackgroundColor() {
     let color = "hsl(" + value + ", 75%, 75%)";
     document.body.style.background =  "url('images/vignette.png'), " + color;
     document.body.style.backgroundBlendMode = "color";
+    document.body.style.backgroundSize = "cover";
+}
+
+
+
+
+// if (document.getElementById("myRange").value > 150) {sample.innerHTML = "peonies, calla lilies, chrysanthemums, roses"};
+// if (150 > document.getElementById("myRange").value > 75 ) {sample.innerHTML = "carnations, tulips, ranunculus, wax flowers"};
+
+let season;
+
+
+let month = document.getElementById("month");
+
+
+function changeMonth() {
+
+    if (slider.value >= 150 && slider.value <= 200) {season = "winter";}
+else if (149 >= slider.value && slider.value >= 100) {season = "spring";}
+else if (99 >= slider.value && slider.value >= 60) {season = "summer";}
+else if (59 >= slider.value && slider.value >= 25) {season = "fall";}
+    month.innerHTML = season;
+};
+
+// let occasion = document.getElementById("occasion");
+// if (occasion.value = "love") {product.style.backgroundColor = "red"};
+
+let love = document.getElementById("love");
+let congrats = document.getElementById("congrats");
+let gratitude = document.getElementById("gratitude");
+let mourning = document.getElementById("mourning");
+let friendship = document.getElementById("friendship");
+
+function trackCheck() {
+
+    if(love.checked){
+        product.style.color = "red";
+    }
+    else if (congrats.checked){
+        product.style.color = "orange";
+    }
+    else if (mourning.checked){
+        product.style.color = "grey";
+    }
+    else if (gratitude.checked){
+        product.style.color = "pink";
+    }
+    else if (friendship.checked){
+        product.style.color = "yellow";
+    }
+    else {
+        product.style.color = "black";
+    }
 }
 
 let recipient = document.getElementById("text");
 
 function changeText() {
-    product.innerHTML = "<div> for " + recipient.value + "</div>" + "<img id='bouquet' src='images/bouquet.png'>";
+    // product.innerHTML = 
+    // "<div> for " + recipient.value + "</div>" + "<img id='bouquet' src='images/bouquet.png'>";
+    if (season = "winter" && love.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> warm in the winter </div>"};
+    if (season = "winter" && congrats.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> snow confetti </div>"};
+    if (season = "winter" && mourning.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> snowdrop remembrance </div>"};
+    if (season = "winter" && gratitude.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> firelight gratitude </div>"};
+    if (season = "winter" && friendship.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> flurry friends </div>"};
+
+    if (season = "spring" && love.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> blooming romance </div>"};
+    if (season = "spring" && congrats.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> new beginnings </div>"};
+    if (season = "spring" && mourning.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> fresh memories </div>"};
+    if (season = "spring" && gratitude.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='spring' src='images/bouquet.png'>" 
+        + "<div> grateful blossoms </div>"};
+    if (season = "winter" && friendship.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='spring' src='images/bouquet.png'>" 
+        + "<div> best buds </div>"};
+
+    if (season = "summer" && love.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> sun-kissed sun kisses </div>"};
+    if (season = "summer" && congrats.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> bright futures </div>"};
+    if (season = "summer" && mourning.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> bygone blossoms </div>"};
+    if (season = "summer" && gratitude.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> sunshine and starlight </div>"};
+    if (season = "summer" && friendship.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> sunset silhouettes </div>"};
+
+    if (season = "fall" && love.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> falling in love </div>"};
+    if (season = "fall" && congrats.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> colors of change </div>"};
+    if (season = "fall" && mourning.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> leaving behind </div>"};
+    if (season = "fall" && gratitude.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> giving thanks </div>"};
+    if (season = "fall" && friendship.checked) {
+        product.innerHTML = "<div> for " + recipient.value + "</div>" 
+        + "<img id='bouquet' src='images/bouquet.png'>" 
+        + "<div> fall friends </div>"};
 }
 
 function makeFlower() {
+    if (recipient.value !== "") {
     product.classList.add("on");
-}
+    }
+};
 
-// if (document.getElementById("myRange").value > 150) {sample.innerHTML = "peonies, calla lilies, chrysanthemums, roses"};
-// if (150 > document.getElementById("myRange").value > 75 ) {sample.innerHTML = "carnations, tulips, ranunculus, wax flowers"};
-
-// let monthInput = document.getElementById("month");
-// let month = monthInput.value;
-// if (month = 1) {let season = "winter";}
-// else if (month = 2) {let season = "winter";}
-// else if (month = 3) {let season = "spring";}
-// else if (month = 4) {let season = "spring";}
-// else if (month = 5) {let season = "spring";}
-// else if (month = 6) {let season = "summer";}
-// else if (month = 7) {let season = "summer";}
-// else if (month = 8) {let season = "summer";}
-// else if (month = 9) {let season = "fall";}
-// else if (month = 10) {let season = "fall";}
-// else if (month = 11) {let season = "fall";}
-// else if (month = 12) {let season = "winter";}
-
-
-// function changeMonth() {
-//     flower.classList.add(season);
+// function pickLove {
+//     product.classList.add("love")
 // }
 
 // function makeSpring() {

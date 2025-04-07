@@ -3,12 +3,13 @@ body {
     transition: 0.5s;
     background: url('images/vignette.png'), rgb(255, 216, 229);
     background-blend-mode: color-dodge;
-    background-size: cover;
+    background-size: 100vw;
+    background-position: center;
 }
 .container {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
 }
 
 #flowerShop {
@@ -22,10 +23,20 @@ body {
     align-items: center;
 }
 
+#occasion {
+    display: flex;
+    width: 40vw;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+}
+
 #product {
     height: 30vh;
     margin-top: 10vh;
     text-align: center;
+    margin-bottom: 10vh;
 }
 
 
@@ -37,6 +48,14 @@ body {
     height: 30vh;
     font-size: 10pt;
 }
+
+/* .love
+
+.congrats
+
+.friendship
+
+.mourning */
 
 #bouquet{
     height: 40vh;
@@ -55,13 +74,13 @@ body {
     justify-content: space-evenly;
 } */
 
-.seasons {
+/* .seasons {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     width: 78vw;
     font-size: 9pt;
-}
+} */
 
 .custom-slider-range:hover {
     opacity: 1.2;

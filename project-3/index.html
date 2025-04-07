@@ -30,14 +30,32 @@
                    value="200" 
                    class="custom-slider-range"
                    id="myRange" 
-                   oninput="changeBackgroundColor()">
+                   oninput="changeBackgroundColor(); changeMonth();">
 
-                <div class="seasons"> 
+                <!-- <div class="seasons"> 
                     <div>winter</div>
                     <div>spring</div>
                     <div>summer</div>
                     <div>fall</div>
+                </div> -->
+
+                <div id="month">season</div>
+
+                <div>
+                    <form id="occasion">
+                        <input type="radio" id="love" name="fav_language" value="love" onchange="trackCheck()">
+                        <label for="love">love</label><br>
+                        <input type="radio" id="congrats" name="fav_language" value="congrats" onchange="trackCheck()">
+                        <label for="congrats">congrats</label><br>
+                        <input type="radio" id="gratitude" name="fav_language" value="gratitude" onchange="trackCheck()">
+                        <label for="gratitude">gratitude</label>
+                        <input type="radio" id="mourning" name="fav_language" value="mourning" onchange="trackCheck()">
+                        <label for="mourning">mourning</label>
+                        <input type="radio" id="friendship" name="fav_language" value="friendship" onchange="trackCheck()">
+                        <label for="friendship">friendship</label>
+                      </form>
                 </div>
+                <div id="color"></div>
 
                 <!-- <div id="samples"> hey there </div> -->
                 <br>
