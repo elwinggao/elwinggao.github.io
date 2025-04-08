@@ -19,11 +19,9 @@ body {
 }
 
 .sub {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
   width: 12vw;
-  height: 92vh;
-  justify-content: space-between;
+  height: 10vh;
   text-align: right;
   padding-top: 5vh;
 }
@@ -34,16 +32,25 @@ body {
   }
 
 .info{
-    text-align: right;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    height: 20vh;
+    justify-content: space-between;
+    position: absolute;
+    right: 10vh;
+    top: 5vh;
   }
+
 
 .breath {
     position: absolute;
-    height: 63vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    top: 12vh;
+    top: 20vh;
     left: 12vw;
     font-family: "roca";
     font-style: italic;
@@ -81,7 +88,8 @@ body {
     font-family: "roca", serif;
     letter-spacing: 1pt;
     font-weight: 300;
-    color:rgba(160, 234, 240, 0.74);
+    color:rgb(223, 244, 253);
+    opacity: 50%;
     transition: cubic-bezier(0.215, 0.610, 0.355, 1);
     transition-duration: 2s;
   }
@@ -91,11 +99,12 @@ body {
     font-family: "aesthet-nova", serif;
     font-weight: 100;
     line-height: 1.2;
-    color: rgba(160, 234, 240, 0.74);
+    color:rgb(223, 244, 253);
+    opacity: 50%;
     ;
   }
 
-img {
+.breath img {
     height: 10vh;
 }
 
@@ -165,7 +174,7 @@ img {
 .container2 {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 170vh;
   background-image: linear-gradient(rgb(12, 142, 151), rgb(1, 78, 97));
   }
 
@@ -175,9 +184,9 @@ img {
     flex-direction: column;
     justify-content: space-evenly;
     width: 80vw;
-    height: 40vh;
+    height: 30vh;
     left: 12vw;
-    top: 30vh;
+    top: 10vh;
   }
 
   p{
@@ -193,3 +202,89 @@ img {
     letter-spacing: 1vw;
     cursor: e-resize;
   }
+
+  iframe {
+    display: block;
+    position: absolute;
+    top: 60vh;
+    left: 12vw;
+  }
+
+.container3 {
+  position: relative;
+  width: 100vw;
+  height: 460vh;
+  background-image: linear-gradient(rgb(1, 78, 97), rgb(0, 53, 66));
+  }
+
+  .row {
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    display: block;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  /* @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  } */
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  /* @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  } */
+
+
+.container4 {
+  position: relative;
+  width: 100vw;
+  height: 130vh;
+  background-image: linear-gradient(rgb(0, 53, 66), rgb(1, 78, 97));
+  }
+
+.container4 iframe {
+    display: block;
+    position: absolute;
+    top: 30vh;
+    left: 12vw;
+  }
+
+.container5 {
+  position: relative;
+  width: 100vw;
+  height: 112vh;
+  background-image: linear-gradient(rgb(1, 78, 97), rgb(12, 142, 151));
+  text-align: center;
+  }
+
+.container5 img{
+  position: absolute;
+  width: 50vw;
+  left: 25vw;
+  top: 30vh;
+  }
+
+#ty {
+  position: absolute;
+  width: 50vw;
+  left: 25vw;
+  top: 95vh;
+}

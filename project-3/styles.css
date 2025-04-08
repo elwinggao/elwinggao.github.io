@@ -1,3 +1,10 @@
+@font-face {
+    font-family: "Arden";
+    src: url("Arden/ardenserif-webfont.woff") format("woff");
+    font-weight: normal;
+    font-size: normal;
+}
+
 body {
     margin: 0;
     transition: 0.5s;
@@ -5,11 +12,12 @@ body {
     background-blend-mode: color-dodge;
     background-size: 100vw;
     background-position: center;
+    font-family: "maiola";
 }
 .container {
     position: relative;
     width: 100vw;
-    height: 120vh;
+    height: 140vh;
 }
 
 #flowerShop {
@@ -23,13 +31,28 @@ body {
     align-items: center;
 }
 
+h1 {
+    font-family: "Arden";
+    font-weight: 200;
+    font-size: 5vw;
+    margin-top: -6vh;
+    margin-bottom: 3vh;
+}
+
+h3 {
+    font-family: "maiola";
+    font-weight: 200;
+    letter-spacing: .5vw;
+    word-spacing: 1vw;
+}
+
 #occasion {
     display: flex;
     width: 40vw;
     justify-content: space-evenly;
     flex-direction: row;
     margin-top: 5vh;
-    margin-bottom: 3vh;
+    margin-bottom: 1vh;
 }
 
 #product {
@@ -49,21 +72,21 @@ body {
     font-size: 10pt;
 }
 
-/* .love
+#text {
+    font-family: "maiola";
+    text-align: center;
+    width: 12vw;
+}
 
-.congrats
+#make {
+    font-family: "maiola";
+    margin-top: 5vh;
+}
 
-.friendship
-
-.mourning */
-
-#bouquet{
+#bouquet {
     height: 40vh;
 }
 
-#text {
-    width: 160px;
-}
 /* #background {
     height: 4vh;
     margin: 1vh;

@@ -75,89 +75,93 @@ let recipient = document.getElementById("text");
 function changeText() {
     // product.innerHTML = 
     // "<div> for " + recipient.value + "</div>" + "<img id='bouquet' src='images/bouquet.png'>";
-    if (season = "winter" && love.checked) {
+    if (season == "winter" && love.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> warm in the winter </div>"};
-    if (season = "winter" && congrats.checked) {
+        + "<div> warm in the winter </div>"}
+    else if (season == "winter" && congrats.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> snow confetti </div>"};
-    if (season = "winter" && mourning.checked) {
+        + "<div> snow confetti </div>"}
+    else if (season == "winter" && mourning.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> snowdrop remembrance </div>"};
-    if (season = "winter" && gratitude.checked) {
+        + "<div> snowdrop remembrance </div>"}
+    else if (season == "winter" && gratitude.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> firelight gratitude </div>"};
-    if (season = "winter" && friendship.checked) {
+        + "<div> firelight gratitude </div>"}
+    else if (season == "winter" && friendship.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> flurry friends </div>"};
+        + "<div> flurry friends </div>"}
 
-    if (season = "spring" && love.checked) {
+    else if (season == "spring" && love.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> blooming romance </div>"};
-    if (season = "spring" && congrats.checked) {
+        + "<div> blooming romance </div>"}
+    else if (season == "spring" && congrats.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> new beginnings </div>"};
-    if (season = "spring" && mourning.checked) {
+        + "<div> new beginnings </div>"}
+    else if (season == "spring" && mourning.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> fresh memories </div>"};
-    if (season = "spring" && gratitude.checked) {
+        + "<div> fresh memories </div>"}
+    else if (season == "spring" && gratitude.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='spring' src='images/bouquet.png'>" 
-        + "<div> grateful blossoms </div>"};
-    if (season = "winter" && friendship.checked) {
+        + "<div> grateful blossoms </div>"}
+    else if (season == "spring" && friendship.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='spring' src='images/bouquet.png'>" 
-        + "<div> best buds </div>"};
+        + "<div> best buds </div>"}
 
-    if (season = "summer" && love.checked) {
+    else if (season == "summer" && love.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> sun-kissed sun kisses </div>"};
-    if (season = "summer" && congrats.checked) {
+        + "<div> sun-kissed sun kisses </div>"}
+    else if (season == "summer" && congrats.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> bright futures </div>"};
-    if (season = "summer" && mourning.checked) {
+        + "<div> bright futures </div>"}
+    else if (season == "summer" && mourning.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> bygone blossoms </div>"};
-    if (season = "summer" && gratitude.checked) {
+        + "<div> bygone blossoms </div>"}
+    else if (season == "summer" && gratitude.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> sunshine and starlight </div>"};
-    if (season = "summer" && friendship.checked) {
+        + "<div> sunshine and starlight </div>"}
+    else if (season == "summer" && friendship.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> sunset silhouettes </div>"};
+        + "<div> sunset silhouettes </div>"}
 
-    if (season = "fall" && love.checked) {
+    else if (season == "fall" && love.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> falling in love </div>"};
-    if (season = "fall" && congrats.checked) {
+        + "<div> falling in love </div>"}
+    else if (season == "fall" && congrats.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> colors of change </div>"};
-    if (season = "fall" && mourning.checked) {
+        + "<div> colors of change </div>"}
+    else if (season == "fall" && mourning.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> leaving behind </div>"};
-    if (season = "fall" && gratitude.checked) {
+        + "<div> leaving behind </div>"}
+    else if (season == "fall" && gratitude.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
-        + "<div> giving thanks </div>"};
-    if (season = "fall" && friendship.checked) {
+        + "<div> giving thanks </div>"}
+    else if (season == "fall" && friendship.checked) {
         product.innerHTML = "<div> for " + recipient.value + "</div>" 
         + "<img id='bouquet' src='images/bouquet.png'>" 
         + "<div> fall friends </div>"};
+
+    // else {"<div> for " + recipient.value + "</div>" 
+    // + "<img id='bouquet' src='images/bouquet.png'>" 
+    // + "<div> yep </div>"};
 }
 
 function makeFlower() {
