@@ -2,18 +2,12 @@
 
 
 body {
-    /* I'm overriding the default margin and setting it to 0 */
         margin: 0;
     }
 
 .container {
-/* I'm giving this a position:relative so I can position other content within it with position:absolute */
     position: relative;
-
-/* This makes the container 100% of the viewport width */
     width: 100vw;
-
-/* This makes the container 100% of the viewport height */
     height: 100vh;
     background-color: rgb(12, 142, 151);
 }
@@ -81,6 +75,7 @@ body {
   h2:hover {
     color: red;
     text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    opacity: 100%;
   }
 
   h2 {
@@ -174,8 +169,8 @@ body {
 .container2 {
   position: relative;
   width: 100vw;
-  height: 170vh;
-  background-image: linear-gradient(rgb(12, 142, 151), rgb(1, 78, 97));
+  height: 140vh;
+  background-image: linear-gradient(rgb(12, 142, 151), rgb(1, 60, 75));
   }
 
   .translation {
@@ -187,6 +182,67 @@ body {
     height: 30vh;
     left: 12vw;
     top: 10vh;
+  }
+
+  #shoesoff {
+    position: absolute;
+    left: 12vw;
+    top: 100vh;
+
+    background-color: #ffffff00;
+    border: none;
+    color: rgba(201, 240, 245, 0.712);
+    padding: 0px 0px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 1.25vw;
+    letter-spacing: 5px;
+    word-spacing: 5em;
+    font-weight: 200;
+
+    width: 80%;
+
+    font-family: "roca";
+    font-style: italic;
+    transition: 2.75s;
+  }
+
+  #shoesoff:hover {
+    cursor: pointer;
+    color: bisque;
+  }
+
+#panels {
+  /* background-image: url("images/b3.jpg");
+  background-size: cover;
+  background-position-y: center; */
+  background-image: linear-gradient(rgb(1, 117, 126), rgb(1, 60, 75));
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  z-index: 2;
+  
+}
+
+#pallet {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background-image: url("images/b3.jpg");
+  background-size: cover;
+  background-position-y: center;
+  opacity: 0;
+  transition: 3s;
+}
+
+.container2a {
+  position: relative;
+  /* width: 100vw;
+  height: 100vh; */
+  background-image: linear-gradient(rgb(1, 60, 75), rgb(1, 78, 97));
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; 
   }
 
   p{
@@ -203,24 +259,28 @@ body {
     cursor: e-resize;
   }
 
-  iframe {
+  .container2a iframe {
     display: block;
     position: absolute;
-    top: 60vh;
+    top: 30vh;
     left: 12vw;
+    width: 75%;
+    height: 75%;
+    
   }
 
 .container3 {
   position: relative;
   width: 100vw;
-  height: 460vh;
-  background-image: linear-gradient(rgb(1, 78, 97), rgb(0, 53, 66));
+  height: 480vh;
+  background-image: linear-gradient(rgb(1, 78, 97), rgb(0, 53, 66), rgb(1, 78, 97));
   }
 
   .row {
     display: flex;
-    /* flex-wrap: wrap; */
     padding: 0 4px;
+    position: absolute;
+    top: 30vh;
   }
   
   /* Create four equal columns that sits next to each other */
@@ -253,38 +313,51 @@ body {
   } */
 
 
-.container4 {
-  position: relative;
-  width: 100vw;
-  height: 130vh;
-  background-image: linear-gradient(rgb(0, 53, 66), rgb(1, 78, 97));
-  }
-
-.container4 iframe {
-    display: block;
-    position: absolute;
-    top: 30vh;
-    left: 12vw;
-  }
-
 .container5 {
   position: relative;
   width: 100vw;
-  height: 112vh;
-  background-image: linear-gradient(rgb(1, 78, 97), rgb(12, 142, 151));
+  height: 125vh;
+  background-image: linear-gradient(rgb(1, 78, 97), rgb(25, 146, 155));
   text-align: center;
   }
 
-.container5 img{
+.container5 input{
   position: absolute;
   width: 50vw;
   left: 25vw;
-  top: 30vh;
+  bottom: 18vh;
   }
+
+#me {
+  transition: 2s;
+}
 
 #ty {
   position: absolute;
   width: 50vw;
   left: 25vw;
-  top: 95vh;
+  bottom: 12vh;
 }
+
+.off {
+  display: none;
+  transition: 3s;
+}
+
+
+.container4 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgb(107, 172, 189) 5%, oldlace 45%);
+  }
+
+.container4 iframe {
+    display: block;
+    position: absolute;
+    top: 20vh;
+    left: 20vw;
+
+    width: 60%;
+    height: 60%;
+  }
