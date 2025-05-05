@@ -9,8 +9,9 @@
 </head>
 <body>
     <div class="container">
-        <div>
-            <form>
+        <div id="info">
+            <div>
+                <form>
                 <label for="teaType">Choose a tea:</label>
                 <select name="tea" id="teaType" required>
                   <option value="default" id="default">Select...</option>
@@ -22,8 +23,9 @@
                   <option value="puerhRipe" id="puerhRipe">Pu'Erh Tea (Ripe)</option>
                   <option value="floral" id="floral">Floral</option>
                 </select>
-            </form>
-            <div id="tea">Tea</div>
+                </form>
+            </div>
+            <!-- <div id="tea">Tea</div> -->
             <div id="pot"></div>
             <div id="temperature"></div>
             <div id="quantity"></div>
@@ -32,7 +34,7 @@
         </div>
 
         <div id="safeTimer">
-            <p id="safeTimerDisplay">0:00</p>
+            <div id="safeTimerDisplay">0:00</div>
             <input type="button" id="start" value="Start" onclick="startTimer()">
         </div>
 
