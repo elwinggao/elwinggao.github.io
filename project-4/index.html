@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>Tea Timer</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <form>
+                <label for="teaType">Choose a tea:</label>
+                <select name="tea" id="teaType" required>
+                  <option value="default" id="default">Select...</option>
+                  <option value="green" id="green">Green Tea</option>
+                  <option value="white" id="white">White Tea</option>
+                  <option value="yellow" id="yellow">Yellow Tea</option>
+                  <option value="black" id="black">Black Tea</option>
+                  <option value="puerhRaw" id="puerhRaw">Pu'Erh Tea (Raw)</option>
+                  <option value="puerhRipe" id="puerhRipe">Pu'Erh Tea (Ripe)</option>
+                  <option value="floral" id="floral">Floral</option>
+                </select>
+            </form>
+            <div id="tea">Tea</div>
+            <div id="pot"></div>
+            <div id="temperature"></div>
+            <div id="quantity"></div>
+            <div id="ratio"></div>
+            <div id="notes"></div>
+        </div>
+
+        <div id="safeTimer">
+            <p id="safeTimerDisplay">0:00</p>
+            <input type="button" id="start" value="Start" onclick="startTimer()">
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
