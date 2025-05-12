@@ -17,8 +17,8 @@ h1 {
     color: steelblue;
     font-family: "Maiola";
     padding-left: 75px;
-    padding-top: 170px;
-    font-size: 30px;
+    padding-top: 100px;
+    font-size: 18px;
 
 }
 
@@ -39,16 +39,24 @@ p {
 
 }
 
-ul {
+ol {
     color: cornsilk;
     padding-left: 120px;
-    padding-top: 0px;
+    padding-top: 20px;
     font-family: "Maiola";
     list-style-type: cjk-ideographic;
+    margin: 0;
+    /* padding: 0; */
+    position: relative;
+    left: 200px;
 }
 
-ul li {
+
+ol li {
     margin: 15px;
+    position: absolute;
+    top: calc(var(--i) * 75px);
+    left: calc(var(--i) * 200px);
 }
 
 a {
@@ -58,4 +66,17 @@ a {
 
 a:hover {
     color: steelblue;
+}
+
+
+canvas {
+    display: block;
+  }
+
+#flock {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
 }
