@@ -5,38 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/lgb1iax.css">
     <title>Tea Timer</title>
 </head>
 <body>
     <div class="container">
+        <div id="table"></div>
         <div id="info">
             <div>
                 <form>
                 <label for="teaType">Choose a tea:</label>
                 <select name="tea" id="teaType" required>
                   <option value="default" id="default">Select...</option>
-                  <option value="green" id="green">Green Tea</option>
-                  <option value="white" id="white">White Tea</option>
-                  <option value="yellow" id="yellow">Yellow Tea</option>
-                  <option value="black" id="black">Black Tea</option>
-                  <option value="puerhRaw" id="puerhRaw">Pu'Erh Tea (Raw)</option>
-                  <option value="puerhRipe" id="puerhRipe">Pu'Erh Tea (Ripe)</option>
-                  <option value="floral" id="floral">Floral</option>
+                  <option value="10" id="green">Green Tea</option>
+                  <option value="30" id="white">White Tea</option>
+                  <option value="20" id="yellow">Yellow Tea</option>
+                  <option value="10" id="black">Black Tea</option>
+                  <option value="15" id="puerhRaw">Pu'Erh Tea (Raw)</option>
+                  <option value="15" id="puerhRipe">Pu'Erh Tea (Ripe)</option>
+                  <option value="30" id="floral">Floral</option>
                 </select>
                 </form>
             </div>
+
+            <div id="output">
             <!-- <div id="tea">Tea</div> -->
-            <div id="pot"></div>
-            <div id="temperature"></div>
-            <div id="quantity"></div>
-            <div id="ratio"></div>
-            <div id="notes"></div>
+                <div id="pot"></div>
+                <div id="temperature"></div>
+                <div id="quantity"></div>
+                <div id="ratio"></div>
+                <div id="notes"></div>
+            </div>
         </div>
 
-        <div id="safeTimer">
+        <!-- <div id="safeTimer">
             <div id="safeTimerDisplay">0:00</div>
             <input type="button" id="start" value="Start" onclick="startTimer()">
-        </div>
+        </div> -->
+
+        <div class="box">
+            <!-- <div id="timer">10</div> -->
+            
+            <div class="scene">
+                <img id="teapot" class="teapot" src="images/teapot.png" alt="Teapot" />
+                <div class="steam-container" id="steamContainer"></div>
+                <div class="stream" id="stream"></div>
+                <img class="cup" id="frontcup" src="images/frontcup.png" alt="Cup" />
+                <div class="fill" id="fill"></div>
+                <img class="cup" id="fullcup" src="images/fullcup.png" alt="Cup" />
+                <img class="cup" id="fullcup2" src="images/fullcup.png" alt="Cup" />
+          </div>
+
+            <div class="buttons">
+            <button id="startButton">Start</button>
+            <button id="pourButton" style="display: none;">Pour</button>
+            <button id="resetButton" style="display: none;">Reset</button>
+            </div>
+
+          <audio id="pourSound" src="assets/pour.mp3"></audio>
 
     </div>
 
