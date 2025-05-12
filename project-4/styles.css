@@ -16,8 +16,8 @@ body {
     flex-direction: column;
 }
 
-form {
-    font-family: "alize";
+#teaType {
+    font-family: "alize", serif;
 }
 
 #info {
@@ -164,7 +164,7 @@ form {
 
   button {
     font-size: 1rem;
-    padding: 10px 20px;
+    padding: 5px 5px;
     margin: 10px;
     cursor: pointer;
     width: 80px;
@@ -172,6 +172,7 @@ form {
     position: absolute;
     top: 475px;
     left: 650px;
+    font-family: "alize";
   }
 
   #table {
